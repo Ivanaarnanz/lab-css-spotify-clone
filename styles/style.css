@@ -51,10 +51,10 @@ body {
     color: #1A1A1A;
 }
 
-/** HERO section */
+/**---------------------HERO section ----------------------------*/
 .hero {
     height: 600px;
-    background: black url('../images/landing.jpg') no-repeat center bottom  / cover;
+    background: black url('../images/landing.jpg') no-repeat center bottom / cover;
     color: white;
     display: flex;
     align-items: center;
@@ -62,7 +62,7 @@ body {
 
 }
 
-.hero > div {
+.hero>div {
     width: 60%;
     text-align: center;
 }
@@ -76,7 +76,7 @@ body {
     font-size: 2rem;
 }
 
-/** -------------iteración 3----------------------*/
+/** -------------iteración 3---------------------------------*/
 .spotify {
     margin: 2rem 0;
 }
@@ -88,24 +88,69 @@ body {
     text-decoration-thickness: 3px;
     text-underline-offset: 10px;
 }
+
 .features {
     display: flex;
     justify-content: space-around;
     text-align: center;
+    margin-top: 2rem;
 
 }
 
 .features article {
     flex: 1 0 0;
     max-width: 250px;
+    padding-top: 60px;
 }
 
 .features article h3 {
     color: #00B172;
 }
 
+.features__songs {
+    background: white url(../images/music-icon.png) no-repeat center top / 75px;
+}
+
+.features__music {
+    background: white url(../images/high-quality-icon.png) no-repeat center top / 75px;
+}
+
+.features__stream {
+    background: white url(../images/devices-icon.png) no-repeat center top / 75px;
+}
+
+/**---------------------------ACTIONS------------------*/
+
+.actions {
+    color: white;
+    background color: #00B172;
+    padding: 3rem;
+    background: #00B172 url(../images/spotify-app.jpg) no-repeat 90% center / 200px;
+    position: relative;
+}
+
+.actions__title {
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 10px;
+
+}
+
+.actions>article {
+    margin-top: 3rem;
+    width: 50%;
+    max-width: 300px;
+}
+
+.spotify-icon {
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+}
+
 
 /** --------------------------- FOOTER ----------------------- */
-.footer {
-    
-}
+.footer {}
