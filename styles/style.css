@@ -1,8 +1,111 @@
 /*
 Colors:
 
-Text: #1A1A1A
+Text: 1A1A1A
 Green: #00B172
 White: #FFF
 
 */
+
+* {
+    box-sizing: border-box;
+}
+
+/** tags selectors */
+
+a {
+    text-decoration: none;
+}
+
+body {
+    padding-top: 60px;
+    font-family: sans-serif;
+}
+
+
+/** los selectores de clase respetando en lo que pueda la estrctura HTML */
+
+/** ---------------- NAVBAR ---------------------------------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+.navbar__logo {
+    width: 200px;
+}
+
+.navbar__links {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar__links a {
+    color: #1A1A1A;
+}
+
+/** HERO section */
+.hero {
+    height: 600px;
+    background: black url('../images/landing.jpg') no-repeat center bottom  / cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hero > div {
+    width: 60%;
+    text-align: center;
+}
+
+
+.hero__title {
+    font-size: 3rem;
+}
+
+.hero__description {
+    font-size: 2rem;
+}
+
+/** -------------iteración 3----------------------*/
+.spotify {
+    margin: 2rem 0;
+}
+
+.spotify__title {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #00B172;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 10px;
+}
+.features {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+.features article {
+    flex: 1 0 0;
+    max-width: 250px;
+}
+
+.features article h3 {
+    color: #00B172;
+}
+
+
+/** --------------------------- FOOTER ----------------------- */
+.footer {
+    
+}
